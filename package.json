@@ -77,6 +77,18 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
-  }
+    "testEnvironment": "node",
+
+
+"scripts": {
+"build": "nest build",
+"start:prod": "node dist/main",
+"start:dev": "nest start --watch",
+
+"scripts": {
+"prisma:deploy": "prisma migrate deploy",
+"postinstall": "prisma generate"
+}
+}
+}
 }
